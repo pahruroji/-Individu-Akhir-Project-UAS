@@ -1,9 +1,28 @@
-# -Individu-Akhir-Project-UAS
-
-System.out.println("Number of Arguments=" +args.length);
-          System.out.println("First Argument=" + args[1] +""+ args[2] +""+ args[3]
-        +""+ args[4] +""+ args[5]);
-        
-    
+public class Hitung 
+{static int tambah(int x, int y){  
+ return x+y;
+}
+static double tambah(double x, double y){ 
+  return x+y;
+}
+static int tambah(int x, int y, int z){  
+ return x+y+z;
+}
+static void tambah2(int x, int y)
+{  
+ System.out.println("x"+x+" + y"+y+"="+(x+y));
+}
+public static void main(String[] args)
+{   
+int x,y;x=2;
+ y=x+3;
+x=tambah(2,3);
+System.out.println("1.    "+x);
+System.out.printf("2.   %.2f \n",tambah(2.3, 4.1));
+System.out.println("3.   "+tambah(5, 12, 3));
+System.out.println("4.   "+tambah(100, 0.5));
+System.out.println("5.   "+tambah(2.5, 4));
+System.out.println("6.    "+tambah(tambah(x*2,   (x*2-y)), tambah((y-x),tambah(7, 3), 2)));
+System.exit(0);
 }
 }
